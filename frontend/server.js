@@ -1,5 +1,5 @@
-var express = require('express');
-var app = express();
+let express = require('express');
+let app = express();
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -8,12 +8,12 @@ app.set('view engine', 'ejs');
 
 // index page
 app.get('/', function(req, res) {
-  var mascots = [
+  let mascots = [
     { name: 'Sammy', organization: "DigitalOcean", birth_year: 2012},
     { name: 'Tux', organization: "Linux", birth_year: 1996},
     { name: 'Moby Dock', organization: "Docker", birth_year: 2013}
   ];
-  var tagline = "No programming concept is complete without a cute animal mascot.";
+  let tagline = "No programming concept is complete without a cute animal mascot.";
 
   res.render('pages/index', {
     mascots: mascots,
