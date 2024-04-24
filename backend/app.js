@@ -7,8 +7,8 @@ const router = require('./routes/router')
 
 const app = express();
 
-const DBuri = 'mongodb://10.12.14.42:27017/my_database';
-
+const DBuri = "mongodb+srv://testuser:Passord1@mongopongo.hkxltqo.mongodb.net/tordrustand?retryWrites=true&w=majority&appName=mongopongo"/
+mongoose.connect(DBuri);
 
 
 // Configure CORS to allow requests from frontend server
